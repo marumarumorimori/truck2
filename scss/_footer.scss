@@ -1,0 +1,137 @@
+@use "variables" as *;
+@use "mediaQuery" as *;
+.p-footer {
+  &__contact {
+    box-shadow: 0 0 2vw 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: 0 auto -10vw;
+    padding: 2.5vw 0;
+    position: relative;
+    background: #fff;
+    box-sizing: border-box;
+
+    @include min(lg) {
+      width: 90%;
+    }
+    @include min(md) {
+      width: 90%;
+    }
+    h3 {
+      color: #04307c;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1.25rem;
+    }
+    &__tel {
+      text-align: center;
+      padding: 1rem 2rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 0;
+        border-right: 1px solid #cfcfcf;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        @include min(md) {
+          right: 0;
+          // top: 100%;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          border-right: none;
+          border-bottom: 1px solid #cfcfcf;
+        }
+      }
+      p {
+        display: flex;
+        align-items: center;
+      }
+      span {
+        font-size: 2.4rem;
+      }
+      img {
+        margin-right: 1rem;
+      }
+    }
+    &__mail {
+      text-align: center;
+      padding: 1rem 2rem;
+
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__nav {
+    background-color: #2e3741;
+    padding-top: 15vw;
+    padding-bottom: 2rem;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+      // background-color: antiquewhite;
+      width: 90%;
+      margin: 0 auto;
+      @include min(md) {
+        width: 95%;
+      }
+      @include min(min) {
+        width: 98%;
+      }
+
+      li {
+        margin-right: 1rem;
+        width: 23%;
+        @include min(md) {
+          width: 150px;
+        }
+        @include min(min) {
+          width: 100px;
+        }
+
+        a {
+          color: #fff;
+          display: inline-block;
+          padding-bottom: 1rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #3f4851;
+          margin-right: 1rem;
+          margin-bottom: 2rem;
+          font-size: 0.8rem;
+          .pdfIcon {
+            width: 1.2rem;
+            margin-right: 0.5rem;
+          }
+          @include min(min) {
+            font-size: 0.6rem;
+          }
+          span {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  small {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+
+    width: 100%;
+    margin-top: 0.1vh;
+  }
+}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+@use "_reset.scss";
+@use "variables" as *;
+@use "_header.scss";
+@use "footer.scss";
+@use "_button.scss";
+@use "_main.scss";
+@use "_seminar.scss";
+@use "_contact.scss";
+@use "_company.scss";
+@use "_greeting.scss";
+
+body {
+  font-family: $base-font-family;
+}

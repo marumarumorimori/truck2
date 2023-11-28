@@ -1,0 +1,185 @@
+@use "variables" as *;
+@use "mediaQuery" as *;
+.contact-container {
+  width: 90%;
+
+  margin: 0px auto;
+}
+.contact {
+  width: 100%;
+}
+
+.contact h2 {
+  color: #222222;
+  letter-spacing: 0.1rem;
+}
+.contact h2:before {
+  background-color: #79d3f3; /*線の色*/
+  left: 7%;
+}
+
+.contact-text {
+  /* background-color: aquamarine; */
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-text-left,
+.contact-text-right {
+  width: 50%;
+  padding: 20px 0;
+}
+.contact-text-left {
+  border-right: 1px solid #707070;
+  padding-right: 1%;
+}
+.contact-text-right {
+  padding-left: 4%;
+}
+
+.contact-text-left h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 0.1rem;
+}
+
+.contact-text-left p,
+.contact-text-right p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+.contact-text-right p:first-child {
+  margin-bottom: 20px;
+}
+.contact-tel {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  //   padd
+  color: $base-color;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.contact-tel-number {
+  font-size: 1.5rem;
+}
+.contact-tel-time {
+  font-size: 0.8rem;
+}
+.contac-alert {
+  font-size: 0.8rem;
+  margin-bottom: 50px;
+}
+.contac-alert p:first-child {
+  margin-bottom: 10px;
+}
+.fb {
+  font-weight: bold;
+}
+.require {
+  background-color: #d50000;
+  color: #fff;
+  padding: 3px 6px;
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
+  margin-right: 3px;
+}
+.contact-form {
+  /* background-color: #79d3f3; */
+}
+.contact-item {
+  border-bottom: 1px solid #707070;
+  /* background-color: #3e40ae; */
+  padding: 20px 5%;
+  display: flex;
+}
+.contact-item-title {
+  width: 40%;
+  display: flex;
+}
+.contact-item label {
+  /* background-color: antiquewhite; */
+  display: inline-block;
+  width: 70%;
+  font-weight: bold;
+  margin-right: 3%;
+}
+.contact-item .require-container {
+  width: 30%;
+}
+.form-input,
+.form-textarea {
+  width: 60%;
+  display: block;
+  border: 1px solid #707070;
+  padding: 5px;
+}
+.form-textarea {
+  height: 150px;
+}
+.contact-form-btn-container {
+  text-align: center;
+}
+.contact-form-btn {
+  background-color: $base-color;
+  padding: 10px 50px;
+  color: #fff;
+  margin: 60px auto 0 auto;
+  transition: 0.6s;
+}
+.contact-form-btn:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 850px) {
+  .contact-item {
+    padding: 20px 1%;
+    display: flex;
+  }
+  .form-input,
+  .form-textarea {
+    width: 70%;
+  }
+  .contact-item label {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .contact-text {
+    display: block;
+  }
+  .contact-text-left,
+  .contact-text-right {
+    width: 100%;
+    padding: 20px 2%;
+  }
+  .contact-text-left {
+    margin-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #707070;
+  }
+  .contact-text-left p,
+  .contact-text-right p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .contac-alert p {
+    font-size: 0.7rem;
+  }
+  .contact-item {
+    display: block;
+  }
+  .contact-item-title {
+    margin-bottom: 10px;
+    width: 70%;
+  }
+  .form-input,
+  .form-textarea {
+    width: 100%;
+  }
+  .contact-item-title label {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+}

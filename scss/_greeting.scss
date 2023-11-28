@@ -1,0 +1,61 @@
+.greeting-container {
+  padding: 50px 24px 40px 24px;
+}
+.kaityou-img {
+  width: 40%;
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+}
+.greeting-container-flex {
+  direction: rtl;
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background-color: antiquewhite; */
+}
+.greeting-container-text {
+  text-align: left;
+  width: 100%;
+  margin-right: 40px;
+  /* background-color: rgb/(228, 151, 52); */
+}
+.greeting-container-text p {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+.name {
+  text-align: right;
+  line-height: 1.4;
+}
+@media screen and (max-width: 864px) {
+  .greeting-container-text {
+    margin-right: 30px;
+  }
+  .kaityou-img {
+    width: 260px;
+    height: 350px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .greeting-container-flex {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .kaityou-img {
+    width: 100%;
+    /* object-fit: cover; */
+    margin-bottom: 50px;
+    /* height: 100%; */
+  }
+  .greeting-container-text {
+    /* text-align: left; */
+    width: 100%;
+    margin-right: 0px;
+  }
+}

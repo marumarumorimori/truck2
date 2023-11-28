@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <header class="p-header">
+      <a href="index.html" class="p-header__logo">トラック産業</a>
+
+      <div class="responsive_btn">
+        <div class="menu_line"></div>
+        <div class="menu_line"></div>
+        <div class="menu_line"></div>
+      </div>
+      <nav id="g-nav">
+        <ul>
+          <li class="li-item"><a href="index.html">ホーム</a></li>
+          <li class="li-item"><a href="index.html">セミナー情報</a></li>
+          <li class="li-item"><a href="index.html">過去の会報</a></li>
+          <li class="li-item"><a href="index.html">会長挨拶</a></li>
+          <li class="li-item"><a href="index.html">会社一覧</a></li>
+          <div class="p-header__cta">
+            <li>
+              <a href="index.html"
+                ><img src="img/mail.svg" alt="" class="mail-icon" /><span
+                  >お問い合せ</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="index.html"
+                ><img src="img/pdf.svg" alt="" />加入申し込み</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <ul class="pankuz">
+        <li class="pankuzList"><a href="#">ホーム</a></li>
+        <li class="pankuzList"><a href="#">カテゴリ名</a></li>
+        <li class="pankuzList">ページタイトル</li>
+      </ul>
+      <div class="titlebg">
+        <h2>お問い合せ</h2>
+      </div>
+      <div class="contact-container">
+        <div class="contact-text">
+          <div class="contact-text-left">
+            <h3>メールでのお問い合わせは以下のフォームよりお願いします。</h3>
+            <p>
+              懇話会・近畿へのお問い合わせありがとうございます。
+              内容を確認次第、ご連絡致します。尚、お問い合わせ内容によりましては、
+              回答に時間がかかる場合がございます。
+            </p>
+          </div>
+          <div class="contact-text-right">
+            <p>
+              もし提供いただいたメールアドレスが誤っている場合や、
+              システム障害などの理由で返信できない場合がございます。
+              ご面倒をおかけしますが、返信がない場合はお手数ですが
+              お電話にてお問い合わせいただけますと幸いです。
+            </p>
+
+            <p class="contact-tel">
+              TEL . <span class="contact-tel-number">06-6575-3131</span>
+            </p>
+            <p class="contact-tel">
+              FAX . <span class="contact-tel-number">06-6575-3134</span>
+            </p>
+            <p class="contact-tel-time">[受付時間]　月〜金　10:00～17:00</p>
+          </div>
+        </div>
+        <div class="contac-alert">
+          <p class="fb">
+            お問い合わせ情報は、フォームにご記入頂きましたメールアドレス宛にも自動返送されます。
+          </p>
+          <p>
+            <span class="require">必須</span>がついている項目は必須入力です。
+          </p>
+        </div>
+        <div class="contact-form">
+          <div class="contact-item">
+            <div class="contact-item-title">
+              <label for="">御社名</label>
+              <p class="require-container"><span class="require">必須</span></p>
+            </div>
+            <input type="text" placeholder="" class="form-input" />
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-title">
+              <label for="">お名前</label>
+              <p class="require-container"><span class="require">必須</span></p>
+            </div>
+            <input type="text" placeholder="" class="form-input" />
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-title">
+              <label for="">ふりがな</label>
+              <p class="require-container"><span class="require">必須</span></p>
+            </div>
+            <input type="text" placeholder="" class="form-input" />
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-title">
+              <label for="">メールアドレス</label>
+              <p class="require-container"><span class="require">必須</span></p>
+            </div>
+            <input type="text" placeholder="" class="form-input" />
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-title">
+              <label for="">住所</label>
+              <p class="require-container"><span class="require">必須</span></p>
+            </div>
+            <input type="text" placeholder="" class="form-input" />
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-title">
+              <label for="">ＴＥＬ</label>
+              <p class="require-container"><span class="require">必須</span></p>
+            </div>
+            <input type="text" placeholder="" class="form-input" />
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-title">
+              <label for="">FAX</label>
+              <p class="require-container"></p>
+            </div>
+            <input type="text" placeholder="" class="form-input" />
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-title">
+              <label for="">URL</label>
+              <p class="require-container"></p>
+            </div>
+            <input type="text" placeholder="" class="form-input" />
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-title">
+              <label for="">お問い合わせ</label>
+              <p class="require-container"><span class="require">必須</span></p>
+            </div>
+            <textarea
+              name=""
+              id=""
+              placeholder=""
+              class="form-textarea"
+            ></textarea>
+          </div>
+
+          <div class="contact-form-btn-container">
+            <button class="contact-form-btn">送信する</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="p-footer">
+      <div class="p-footer__contact fadeBottom">
+        <div class="p-footer__contact__tel">
+          <h3>お電話でのお問い合わせ</h3>
+
+          <p><img src="img/call.svg" alt="" /><span>06-6575-3131 </span></p>
+        </div>
+        <div class="p-footer__contact__mail">
+          <h3>メールによるお問い合わせ</h3>
+          <a href="" class="c-btn">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="p-footer__nav">
+        <ul>
+          <li>
+            <a href=""
+              ><span>セミナー情報</span>
+              <img src="img/footer-right-arrow.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><span>過去の会報</span>
+              <img src="img/footer-right-arrow.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><span>会長挨拶</span>
+              <img src="img/footer-right-arrow.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><span>会社一覧</span>
+              <img src="img/footer-right-arrow.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><span>お問い合わせ</span>
+              <img src="img/footer-right-arrow.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><div>
+                <img
+                  src="img/footer-pdf.svg"
+                  alt=""
+                  class="pdfIcon"
+                />加入申し込み
+              </div>
+              <img src="img/footer-right-arrow.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <small>&copy;トラック産業の将来を考える懇話会・近畿</small>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
